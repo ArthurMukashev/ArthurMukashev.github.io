@@ -91,7 +91,7 @@
 
     <a href="#" class="back-to-top bg-primary text-decoration-none">Наверх</a>
 
-    <div class="card my-4" id="icon-grid">
+    <div class="card my-4" id="main-grid">
         <div class="card-header">
             <h2 class="card-title">Содержание</h2>
         </div>
@@ -252,7 +252,7 @@
 
     <div class="card my-4">
         <div class="card-title">
-            <h2 class="card-header border-bottom" id="statistics">Ключевые цифры,
+            <h2 class="card-header border-bottom" id="item-1">Ключевые цифры,
                 рейтинги и показатели
             </h2>
         </div>
@@ -272,6 +272,7 @@
                 <div class="col-md-12">
                     <div class="h-100 p-5 bg-body-tertiary border rounded-3">
                         <h2>Госуслуги</h2>
+                        <hr>
                         <div class="row">
                             <div class="col-md-6">
                                 <h2>91,5%</h2>
@@ -282,6 +283,9 @@
                                 <h2>94,3%</h2>
                                 <p>населения удовлетворено качеством предоставления электронных услуг</p>
                             </div>
+                        </div>
+                        <hr>
+                        <div class="row">
                             <div class="col-md-6">
                                 <h2>1</h2>
                                 <p>место в ПФО по использованию населением госуслуг в электронной форме</p>
@@ -295,6 +299,458 @@
                     </div>
                 </div>
             </div>
+            <h3>Источники: <a href="gks.ru" target="_blank">gks.ru</a></h3>
+        </div>
+    </div>
+
+    <div class="card my-4">
+        <div class="card-header">
+            <h2 class="card-title">Характеристика ИТ-отрасли Оренбургской области</h2>
+        </div>
+        <div class="card-body">
+            <a href="http://geois.orb.ru/test2/index2.html">
+                <img class="img-fluid" src="assets/img/characteristic.svg" alt="characteristic">
+            </a>
+            <h3>Источник: Оренбургстат</h3>
+        </div>
+    </div>
+
+    <div class="p-5 my-4">
+        <div class="row rounded-3 flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6" id="chart-1"></div>
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Национальная цель
+                    «Цифровая трансформация»
+                </h1>
+                <p class="lead">Указом Президента Российской Федерации от 21 июля 2020 года № 474 «О национальных целях
+                    развития Российской Федерации на период до 2030 года» установлены целевые показатели достижения
+                    национальной цели «Цифровая трансформация» к 2030 году:</p>
+                <ul>
+                    <li>100% — «цифровая зрелость» ключевых отраслей;</li>
+                    <li>95% массовых социально значимых услуг доступны в электронном виде;</li>
+                    <li>97% домохозяйств доступен интернет;</li>
+                    <li>в 4 раза к 2019 году увеличен спрос на отечественные решения в сфере информационных технологий
+                        по отношению к 2019 году.
+                    </li>
+                </ul>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+                </div>
+                <p>Задачи реализации национальных целей положены в основу государственной программы «Цифровая экономика
+                    Оренбургской области»</p>
+                <p><a href="https://digital.orb.ru/documents/active/102391/">Постановление Правительства Оренбургской
+                    области от 29.12.2018 № 917-пп «Об утверждении государственной программы «Цифровая экономика
+                    Оренбургской области»</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h3>Финансирование государственной программы «Цифровая экономика Оренбургской области»</h3>
+            </div>
+            <div class="col-12" id="chart-2"></div>
+        </div>
+    </div>
+
+    <div class="card my-4">
+        <div class="card-header">
+            <h2 class="card-title">Стратегия цифровой трансформации Оренбургской области</h2>
+        </div>
+        <div class="card-body">
+            <p class="card-text">Минцифра является органом исполнительной власти, ответственным за цифровую
+                трансформацию отраслей региона. 30 августа 2022 года утверждена новая версия Стратегии цифровой
+                трансформации отраслей экономики, социальной сферы и государственного управления Оренбургской области до
+                2024 года.</p>
+            <p class="card-text">Цель Стратегии — достичь 100% «цифровой зрелости» пяти отраслей экономики, социальной
+                сферы, государственного управления и осуществить цифровую трансформацию семи приоритетных отраслей путем
+                реализации 37 проектов органов исполнительной власти региона.</p>
+
+            <hr>
+            <h4>Общая сводка</h4>
+            <div id="chart-3"></div>
+            <hr>
+            <h4>Проекты в рамках Стратегии цифровой трансформации в разрезе отраслей экономики</h4>
+            <hr>
+
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Образование
+                        </button>
+                    </h2>
+
+                    <div class="progress-stacked bg-secondary h-100">
+                        <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="79"
+                             aria-valuemin="0" aria-valuemax="100" style="width: 79%">
+                            <div class="progress-bar">79%</div>
+                        </div>
+                    </div>
+
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <h5>Министерство образования Оренбургской области</h5>
+                            <ul class="list-group">
+                                <li class="list-group-item list-group-item-action">Развитие АИС "Цифровое образование
+                                    Оренбургской области"
+                                </li>
+                                <li class="list-group-item list-group-item-action">Цифровой помощник родителя</li>
+                                <li class="list-group-item list-group-item-action">Система управления в образовательной
+                                    организации
+                                </li>
+                                <li class="list-group-item list-group-item-action">Цифровой помощник учителя</li>
+                                <li class="list-group-item list-group-item-action">Цифровой помощник ученика</li>
+                                <li class="list-group-item list-group-item-action">Библиотека цифрового образовательного
+                                    контента
+                                </li>
+                                <li class="list-group-item list-group-item-action">Цифровое портфолио ученика</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Государственное управление
+                        </button>
+                    </h2>
+
+                    <div class="progress-stacked bg-secondary h-100">
+                        <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="73"
+                             aria-valuemin="0" aria-valuemax="100" style="width: 73%">
+                            <div class="progress-bar">73%</div>
+                        </div>
+                    </div>
+
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <h5>Министерство цифрового развития и связи Оренбургской области</h5>
+
+                            <ul class="list-group">
+                                <li class="list-group-item list-group-item-action">Перевод массовых социально значимых
+                                    государственных и муниципальных услуг в электронный вид (рекомендовано ФОИВ)
+                                </li>
+                                <li class="list-group-item list-group-item-action">Создание единой системы
+                                    предоставления государственных услуг (рекомендовано ФОИВ)
+                                </li>
+                                <li class="list-group-item list-group-item-action">ГИС "Активный гражданин Оренбургской
+                                    области"
+                                </li>
+                                <li class="list-group-item list-group-item-action">Внедрение виртуального помощника на
+                                    принципах омниканальности в центрах телефонного обслуживания населения в сфере
+                                    здравоохранения, социальной сфере, МФЦ
+                                </li>
+                                <li class="list-group-item list-group-item-action">Обеспечение технологической
+                                    независимости информационно-технологической инфраструктуры региона
+                                </li>
+                                <li class="list-group-item list-group-item-action">Обеспечение информационной
+                                    безопасности информационно-технологической инфраструктуры Правительства Оренбургской
+                                    области
+                                </li>
+                                <li class="list-group-item list-group-item-action">Создание, развитие и эксплуатация
+                                    аппаратно-программного комплекса "Безопасный город" на территории Оренбургской
+                                    области
+                                </li>
+                                <li class="list-group-item list-group-item-action">Цифровая аналитическая платформа
+                                    Оренбургской области
+                                </li>
+                                <li class="list-group-item list-group-item-action">Развитие ГИС Оренбургской области
+                                </li>
+                                <li class="list-group-item list-group-item-action">Развитие и внедрение единой системы
+                                    юридически значимого электронного документооборота и делопроизводства
+                                </li>
+                                <li class="list-group-item list-group-item-action">Развитие государственной
+                                    информационной системы обеспечения градостроительной деятельности Оренбургской
+                                    области
+                                </li>
+                                <li class="list-group-item list-group-item-action">Государственная информационная
+                                    система "Типовое облачное решение по автоматизации контрольной (надзорной)
+                                    деятельности" (рекомендовано ФОИВ)
+                                </li>
+                            </ul>
+
+                            <h5>Министерство экономического развития, инвестиций, туризма и внешних связей Оренбургской
+                                области</h5>
+                            <ul class="list-group">
+                                <li class="list-group-item list-group-item-action">Организация предоставления
+                                    государственных и типовых муниципальных услуг, оказываемых органами исполнительной
+                                    власти и ОМСУ Оренбургской области
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Городская среда
+                        </button>
+                    </h2>
+
+                    <div class="progress-stacked h-100 bg-secondary">
+                        <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="71"
+                             aria-valuemin="0" aria-valuemax="100" style="width: 71%">
+                            <div class="progress-bar">71%</div>
+                        </div>
+                    </div>
+
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <h5>Министерство строительства, жилищно-коммунального, дорожного хозяйства и транспорта
+                                Оренбургской области</h5>
+                            <ul class="list-group">
+                                <li class="list-group-item list-group-item-action">Развитие Цифровой экосистемы
+                                    формирования комфортной городской среды - быстрый качественный ритм для жизни здесь
+                                    и сейчас
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Общественный транспорт
+                        </button>
+                    </h2>
+
+                    <div class="progress-stacked h-100 bg-secondary">
+                        <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="48"
+                             aria-valuemin="0" aria-valuemax="100" style="width: 48%">
+                            <div class="progress-bar">48%</div>
+                        </div>
+                    </div>
+
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <h5>Министерство строительства, жилищно-коммунального, дорожного хозяйства и транспорта
+                                Оренбургской области</h5>
+                            <ul class="list-group">
+                                <li class="list-group-item list-group-item-action">Зеленый цифровой коридор пассажира</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFifth" aria-expanded="false" aria-controls="collapseFifth">
+                            Здравоохранение
+                        </button>
+                    </h2>
+
+                    <div class="progress-stacked h-100 bg-secondary">
+                        <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="39"
+                             aria-valuemin="0" aria-valuemax="100" style="width: 39%">
+                            <div class="progress-bar">39%</div>
+                        </div>
+                    </div>
+
+                    <div id="collapseFifth" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <h5>Министерство здравоохранения Оренбургской области</h5>
+                            <ul class="list-group">
+                                <li class="list-group-item list-group-item-action">Создание единого цифрового контура в здравоохранении на основе единой государственной информационной системы в сфере здравоохранения (ЕГИСЗ) (региона)</li>
+                                <li class="list-group-item list-group-item-action">Создание медицинских платформенных решений федерального уровня (ВИМИС)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSixth" aria-expanded="false" aria-controls="collapseSixth">
+                            Социальная сфера
+                        </button>
+                    </h2>
+
+                    <div class="progress-stacked h-100 bg-secondary">
+                        <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="50"
+                             aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+                            <div class="progress-bar">????%</div>
+                        </div>
+                    </div>
+
+                    <div id="collapseSixth" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <h5>Министерство социального развития Оренбургской области</h5>
+                            <ul class="list-group">
+                                <li class="list-group-item list-group-item-action">Перевод мер социальной поддержки в формат "Социального казначейства"</li>
+                                <li class="list-group-item list-group-item-action">Создание информационной системы "Единый контакт-центр взаимодействия с гражданами"</li>
+                                <li class="list-group-item list-group-item-action">Использование подсистемы установления и выплат мер социальной защиты (поддержки) Единой государственной информационной системы социального обеспечения для оказания государственных услуг</li>
+                                <li class="list-group-item list-group-item-action">Развитие ГАИС "Электронный социальный регистр населения Оренбургской области"</li>
+                            </ul>
+
+                            <h5>Министерство труда и занятости населения Оренбургской области</h5>
+                            <ul class="list-group">
+                                <li class="list-group-item list-group-item-action">СЗН 2.0 (Модернизация государственной службы занятости населения)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSeventh" aria-expanded="false" aria-controls="collapseSeventh">
+                            Кадры для цифровой экономики
+                        </button>
+                    </h2>
+
+                    <div class="progress-stacked h-100 bg-secondary">
+                        <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="50"
+                             aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+                            <div class="progress-bar">????%</div>
+                        </div>
+                    </div>
+
+                    <div id="collapseSeventh" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <h5>Министерство цифрового развития и связи Оренбургской области</h5>
+                            <ul class="list-group">
+                                <li class="list-group-item list-group-item-action">Обеспечение профориентационной деятельности и популяризации ИТ-специальностей (рекомендовано ФОИВ)</li>
+                                <li class="list-group-item list-group-item-action">Подготовка кадров для ИТ-отрасли</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                            Безопасность
+                        </button>
+                    </h2>
+
+                    <div class="progress-stacked h-100 bg-secondary">
+                        <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="50"
+                             aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+                            <div class="progress-bar">????%</div>
+                        </div>
+                    </div>
+
+                    <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <h5>Департамент пожарной безопасности и гражданской защиты Оренбургской области</h5>
+                            <ul class="list-group">
+                                <li class="list-group-item list-group-item-action">Создание и развитие "Озера данных" регионального уровня в рамках РСЧС</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                            Сельское хозяйство
+                        </button>
+                    </h2>
+
+                    <div class="progress-stacked h-100 bg-secondary">
+                        <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="50"
+                             aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+                            <div class="progress-bar">????%</div>
+                        </div>
+                    </div>
+
+                    <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <h5>Министерство сельского хозяйства, торговли, пищевой и перерабатывающей промышленности Оренбургской области</h5>
+                            <ul class="list-group">
+                                <li class="list-group-item list-group-item-action">Цифровая трансформация агропромышленного комплекса</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                            Промышленность
+                        </button>
+                    </h2>
+
+                    <div class="progress-stacked h-100 bg-secondary">
+                        <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="50"
+                             aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+                            <div class="progress-bar">????%</div>
+                        </div>
+                    </div>
+
+                    <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <h5>Министерство промышленности и энергетики Оренбургской области</h5>
+                            <ul class="list-group">
+                                <li class="list-group-item list-group-item-action">Цифровая трансформация промышленности</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                            Энергетика
+                        </button>
+                    </h2>
+
+                    <div class="progress-stacked h-100 bg-secondary">
+                        <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="50"
+                             aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+                            <div class="progress-bar">????%</div>
+                        </div>
+                    </div>
+
+                    <div id="collapseEleven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <h5>Министерство промышленности и энергетики Оренбургской области</h5>
+                            <ul class="list-group">
+                                <li class="list-group-item list-group-item-action">Цифровая трансформация топливно-энергетического комплекса</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                            Туризм
+                        </button>
+                    </h2>
+
+                    <div class="progress-stacked h-100 bg-secondary">
+                        <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="50"
+                             aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+                            <div class="progress-bar">????%</div>
+                        </div>
+                    </div>
+
+                    <div id="collapseTwelve" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <h5>Министерство экономического развития, инвестиций, туризма и внешних связей Оренбургской области</h5>
+                            <ul class="list-group">
+                                <li class="list-group-item list-group-item-action">Создание единого мультиязычного портала, отвечающего требованиям цифровизации туристических ресурсов</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
         </div>
     </div>
 
@@ -302,6 +758,9 @@
 
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/jquery-3.7.0.min.js"></script>
+
+<script src="assets/js/apexcharts.min.js"></script>
+
 <script src="assets/js/script.js"></script>
 </body>
 </html>
