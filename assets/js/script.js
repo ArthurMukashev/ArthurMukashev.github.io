@@ -1,51 +1,59 @@
 const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
 const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
 
-document.addEventListener('DOMContentLoaded', () => {
-    // Установите конечную дату
-    const deadline = new Date('2025-08-09T15:00:00');
-    
-    // Найдите элементы DOM
-    const elWeeks = document.querySelector('.timer__weeks');
-    const elDays = document.querySelector('.timer__days');
-    const elHours = document.querySelector('.timer__hours');
-    const elMinutes = document.querySelector('.timer__minutes');
-    const elSeconds = document.querySelector('.timer__seconds');
-    
-    // Функция склонения числительных
-    const declensionNum = (num, words) => {
-      return words[(num % 100 > 4 && num % 100 < 20) ? 2 : [2, 0, 1, 1, 1, 2][num % 10 < 5 ? num % 10 : 5]];
-    };
-  
-    // Функция обновления таймера
-    const updateTimer = () => {
-      const now = new Date();
-      const diff = Math.max(0, deadline - now);
 
-      const weeks = Math.floor(diff / (1000 * 60 * 60 * 24 * 7));
-      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-      const minutes = Math.floor((diff / (1000 * 60)) % 60);
-      const seconds = Math.floor((diff / 1000) % 60);
-  
-      elWeeks.textContent = String(weeks).padStart(2,'0');
-      elDays.textContent = String(days).padStart(2, '0');
-      elHours.textContent = String(hours).padStart(2, '0');
-      elMinutes.textContent = String(minutes).padStart(2, '0');
-      elSeconds.textContent = String(seconds).padStart(2, '0');
-  
-      elWeeks.dataset.title = declensionNum(weeks, ['неделя', 'недели', 'недель']);
-      elDays.dataset.title = declensionNum(days, ['день', 'дня', 'дней']);
-      elHours.dataset.title = declensionNum(hours, ['час', 'часа', 'часов']);
-      elMinutes.dataset.title = declensionNum(minutes, ['минута', 'минуты', 'минут']);
-      elSeconds.dataset.title = declensionNum(seconds, ['секунда', 'секунды', 'секунд']);
-  
-      if (diff === 0) {
-        clearInterval(timerId);
-      }
-    };
-  
-    // Запустите таймер
-    updateTimer();
-    const timerId = setInterval(updateTimer, 1000);
-  });
+let countDownDate = new Date('2025-08-09 15:00:00').getTime();
+
+// Update the countdown every 1 second
+let x = setInterval(function () {
+  // Get the current date and time
+  let now = new Date().getTime();
+
+  // Calculate the remaining time
+  let distance = countDownDate - now;
+
+  // Calculate time units
+  let weeks = Math.floor(distance / (1000 * 60 * 60 * 24 * 7));
+  let days = Math.floor((distance % (1000 * 60 * 60 * 24 * 7)) / (1000 * 60 * 60 * 24));
+  let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the countdown
+  document.getElementById("countdown").innerHTML = `
+    ${weeks > 0 ? `
+      <div class="text-light bg-dark rounded px-4 py-3">
+        <b class="animated">${weeks}</b><br>
+        ${weeks > 1 ? 'Недель' : 'Неделя'}
+      </div>
+    ` : ''}
+    ${days > 0 || weeks > 0 ? `
+      <div class="text-light bg-dark rounded px-4 py-3">
+        <b class="animated">${days}</b><br>
+        ${days > 1 ? 'Дней' : 'День'}
+      </div>
+    ` : ''}
+    ${hours > 0 || days > 0 || weeks > 0 ? `
+      <div class="text-light bg-dark rounded px-4 py-3">
+        <b class="animated">${hours}</b><br>
+        ${hours > 1 ? 'Часов' : 'Час'}
+      </div>
+    ` : ''}
+    ${minutes > 0 || hours > 0 || days > 0 || weeks > 0 ? `
+      <div class="text-light bg-dark rounded px-4 py-3">
+        <b class="animated">${minutes}</b><br>
+        ${minutes > 1 ? 'Минут' : 'Минута'}
+      </div>
+    ` : ''}
+    <div class="text-light bg-dark rounded px-4 py-3">
+      <b class="animated">${seconds}</b><br>
+      ${seconds > 1 ? 'Секунд' : 'Секунда'}
+    </div>
+  `;
+
+  // If the countdown is finished
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "EXPIRED";
+  }
+}, 1000);
