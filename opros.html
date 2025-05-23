@@ -1,163 +1,173 @@
-        <h1>Опрос</h1>
-        <div class="row">
-          <div class="col">
-            <div class="card my-4 fs-3">
-              <div class="card-header">
-                <h2 class="card-title">
-                  Есть ли у вас особые предпочтения по еде
-                </h2>
-              </div>
-              <div class="card-body">
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/jquery-3.7.0.min.js"></script>
+  <main class="container">
+    <div class="row text-center">
+      <h1>Опрос</h1>
+    </div>
+    <div class="row">
+      <div class="col-12 text-center">
+        <ul class="list-group">
+          <li class="list-group-item fs-1 mb-4">
+            <h1>Вы придете?</h1>
+            <ul class="list-group">
+              <li class="list-group-item list-group-item-action list-group-item-success">
+                <input class="form-check-input me-1" type="checkbox" value="" id="confirmation">
+                <label class="form-check-label" for="confirmation">Да</label>
+              </li>
+            </ul>
+          </li>
+          <li class="list-group-item fs-1 mb-4">
+            <h1>Сколько человек от Вас будет</h2>
+              <ul class="list-group">
+                <li class="list-group-item list-group-item-action list-group-item-info">
+                  <input class="form-control fs-1 text-center" type="number" min="1" step="1" value="1" id="count" />
+                </li>
+              </ul>
+          </li>
+          <li class="list-group-item fs-1 mb-4">
+            <h1>Их фамилии и имена</h1>
+            <ul class="list-group">
+              <li class="list-group-item list-group-item-action list-group-item-info">
+                <textarea class="form-control fs-1" id="fios"></textarea>
+              </li>
+            </ul>
+          </li>
+          <li class="list-group-item fs-1 mb-4">
+            <h1>Предпочтения по еде</h1>
+            <ul class="list-group">
+              <li class="list-group-item list-group-item-action list-group-item-success">
                 <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    name="flexRadioDefault"
-                    id="flexRadioDefault1"
-                  />
-                  <label class="form-check-label" for="flexRadioDefault1">
+                  <input class="form-check-input" type="checkbox" value="" id="food_0">
+                  <label class="form-check-label" for="food_0">
                     Нет
                   </label>
                 </div>
+              </li>
+              <li class="list-group-item list-group-item-action list-group-item-success">
                 <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    name="flexRadioDefault"
-                    id="flexRadioDefault2"
-                  />
-                  <label class="form-check-label" for="flexRadioDefault2">
+                  <input class="form-check-input" type="checkbox" value="" id="food_1">
+                  <label class="form-check-label" for="food_1">
                     Не ем мясо
                   </label>
                 </div>
+              </li>
+              <li class="list-group-item list-group-item-action list-group-item-success">
                 <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    name="flexRadioDefault"
-                    id="flexRadioDefault3"
-                  />
-                  <label class="form-check-label" for="flexRadioDefault3">
+                  <input class="form-check-input" type="checkbox" value="" id="food_2">
+                  <label class="form-check-label" for="food_2">
                     Не ем рыбу
                   </label>
                 </div>
-
+              </li>
+              <li class="list-group-item list-group-item-action list-group-item-success">
                 <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    name="flexRadioDefault"
-                    id="flexRadioDefault4"
-                  />
-                  <label class="form-check-label" for="flexRadioDefault4">
+                  <input class="form-check-input" type="checkbox" value="" id="food_3">
+                  <label class="form-check-label" for="food_3">
                     Вегетарианец
                   </label>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card my-4">
-              <div class="card-header">
-                <h2 class="card-title">Какой алкоголь вы предпочитаете?</h2>
-              </div>
-              <div class="card-body fs-3">
+              </li>
+            </ul>
+          </li>
+          <li class="list-group-item fs-1 mb-4">
+            <h1>Предпочтения по алкоголю</h1>
+            <ul class="list-group">
+              <li class="list-group-item list-group-item-action list-group-item-success">
                 <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    name="flexRadioDefault1"
-                    id="flexRadioDefault5"
-                  />
-                  <label class="form-check-label" for="flexRadioDefault5">
-                    Вино
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    name="flexRadioDefault1"
-                    id="flexRadioDefault6"
-                  />
-                  <label class="form-check-label" for="flexRadioDefault6">
-                    Водка
-                  </label>
-                </div>
-
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    name="flexRadioDefault1"
-                    id="flexRadioDefault7"
-                  />
-                  <label class="form-check-label" for="flexRadioDefault7">
-                    Шампанское
-                  </label>
-                </div>
-
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    name="flexRadioDefault1"
-                    id="flexRadioDefault8"
-                  />
-                  <label class="form-check-label" for="flexRadioDefault8">
-                    Виски/Коньяк
-                  </label>
-                </div>
-
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    name="flexRadioDefault1"
-                    id="flexRadioDefault9"
-                  />
-                  <label class="form-check-label" for="flexRadioDefault9">
+                  <input class="form-check-input" type="checkbox" name="flexRadioDefault1" id="alco_0" />
+                  <label class="form-check-label" for="alco_0">
                     Не буду пить алкоголь
                   </label>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card my-4 fs-3">
-              <div class="card-header">
-                <h2 class="card-title">
-                  Будет ли с вами на празднике ребенок?
-                </h2>
-              </div>
-              <div class="card-body">
+              </li>
+              <li class="list-group-item list-group-item-action list-group-item-success">
                 <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    name="flexRadioDefault2"
-                    id="flexRadioDefault10"
-                  />
-                  <label class="form-check-label" for="flexRadioDefault10">
+                  <input class="form-check-input" type="checkbox" name="flexRadioDefault1" id="alco_1" />
+                  <label class="form-check-label" for="alco_1">
+                    Вино
+                  </label>
+                </div>
+              </li>
+              <li class="list-group-item list-group-item-action list-group-item-success">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexRadioDefault1" id="alco_2" />
+                  <label class="form-check-label" for="alco_2">
+                    Водка
+                  </label>
+                </div>
+              </li>
+              <li class="list-group-item list-group-item-action list-group-item-success">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexRadioDefault1" id="alco_3" />
+                  <label class="form-check-label" for="alco_3">
+                    Шампанское
+                  </label>
+                </div>
+              </li>
+              <li class="list-group-item list-group-item-action list-group-item-success">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexRadioDefault1" id="alco_4" />
+                  <label class="form-check-label" for="alco_4">
+                    Виски/Коньяк
+                  </label>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="list-group-item fs-1 mb-4">
+            <h1>Будут ли с вами дети?</h1>
+            <ul class="list-group">
+              <li class="list-group-item list-group-item-action list-group-item-success">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="flexRadioDefault2" id="kids_0" />
+                  <label class="form-check-label" for="kids_0">
                     Нет
                   </label>
                 </div>
-
+              </li>
+              <li class="list-group-item list-group-item-action list-group-item-success">
                 <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    name="flexRadioDefault2"
-                    id="flexRadioDefault11"
-                  />
-                  <label class="form-check-label" for="flexRadioDefault11">
-                    Да
+                  <input class="form-check-input" type="checkbox" name="flexRadioDefault2" id="kids_1" />
+                  <label class="form-check-label" for="kids_1">
+                    Да, их будет
+                    <input class="form-control" id="kids_amount" type="number" min="1" step="1" name="" id="" />
                   </label>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr class="my-5" />
-        <h1>Ждем Вас!</h1>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </div>
+    </div>
+    <div class="text-center">
+      <button class="btn btn-lg fs-1 btn-success mb-4" id="answer">Записать ответ</button>
+
+      <hr>
+      <a class="btn btn-lg btn-info fs-1 mb-4" href="index.html">На главную</a>
+
+      <textarea class="form-control fs-1" id="answers"></textarea>
+
+      <h1 style="font-size: 50px">Будем рады видеть Вас!</h1>
+      <hr />
+      <p class="text-body-secondary fs-1">© 2025 Артур и Анна</p>
+    </div>
+  </main>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>

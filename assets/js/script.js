@@ -58,3 +58,56 @@ let x = setInterval(function () {
     clearInterval(x);
   }
 }, 1000);
+
+
+$(document).ready(function() {
+  $('#answer').click(function() {
+    // Собираем данные из формы
+    const isComing = $('#confirmation').is(':checked') ? "Да" : "Нет";
+    const peopleCount = $('#count').val();
+    const names = $('#fios').val().trim();
+    
+    // Собираем пищевые предпочтения
+    let foodPreferences = [];
+    if ($('#food_0').is(':checked')) foodPreferences.push("Нет предпочтений");
+    if ($('#food_1').is(':checked')) foodPreferences.push("Не ест мясо");
+    if ($('#food_2').is(':checked')) foodPreferences.push("Не ест рыбу");
+    if ($('#food_3').is(':checked')) foodPreferences.push("Вегетарианец");
+    if (foodPreferences.length === 0) foodPreferences.push("Не указано");
+    
+    // Собираем алкогольные предпочтения
+    let alcoholPreferences = [];
+    if ($('#alco_0').is(':checked')) alcoholPreferences.push("Не будет пить алкоголь");
+    if ($('#alco_1').is(':checked')) alcoholPreferences.push("Вино");
+    if ($('#alco_2').is(':checked')) alcoholPreferences.push("Водка");
+    if ($('#alco_3').is(':checked')) alcoholPreferences.push("Шампанское");
+    if ($('#alco_4').is(':checked')) alcoholPreferences.push("Виски/Коньяк");
+    if (alcoholPreferences.length === 0) alcoholPreferences.push("Не указано");
+    
+    // Собираем информацию о детях
+    let kidsInfo = "Нет";
+    if ($('#kids_1').is(':checked')) {
+      const kidsCount = $('#kids_amount').val();
+      kidsInfo = `Да, ${kidsCount} детей`;
+    }
+    
+    // Формируем итоговое сообщение
+    let message = `Присутствие: ${isComing}\n`;
+    message += `Количество человек: ${peopleCount}\n`;
+    message += `Имена: ${names || "Не указаны"}\n\n`;
+    message += `Пищевые предпочтения:\n- ${foodPreferences.join("\n- ")}\n\n`;
+    message += `Алкогольные предпочтения:\n- ${alcoholPreferences.join("\n- ")}\n\n`;
+    message += `Дети: ${kidsInfo}\n\n`;
+    // message += `Спасибо за ответ!`;
+    
+    // Вставляем сообщение в textarea
+    $('#answers').val(message);
+    
+    // Копируем в буфер обмена
+    $('#answers').select();
+    document.execCommand('copy');
+    
+    // Показываем уведомление
+    alert('Ответ скопирован в буфер обмена! Теперь вы можете отправить его организаторам.');
+  });
+});
