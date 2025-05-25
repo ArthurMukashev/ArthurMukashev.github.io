@@ -78,10 +78,11 @@ $(document).ready(function() {
     // Собираем алкогольные предпочтения
     let alcoholPreferences = [];
     if ($('#alco_0').is(':checked')) alcoholPreferences.push("Не будет пить алкоголь");
-    if ($('#alco_1').is(':checked')) alcoholPreferences.push("Вино");
-    if ($('#alco_2').is(':checked')) alcoholPreferences.push("Водка");
-    if ($('#alco_3').is(':checked')) alcoholPreferences.push("Шампанское");
-    if ($('#alco_4').is(':checked')) alcoholPreferences.push("Виски/Коньяк");
+    if ($('#alco_1').is(':checked')) alcoholPreferences.push("Нет предпочтений");
+    if ($('#alco_2').is(':checked')) alcoholPreferences.push("Вино");
+    if ($('#alco_3').is(':checked')) alcoholPreferences.push("Водка");
+    if ($('#alco_4').is(':checked')) alcoholPreferences.push("Шампанское");
+    if ($('#alco_5').is(':checked')) alcoholPreferences.push("Виски/Коньяк");
     if (alcoholPreferences.length === 0) alcoholPreferences.push("Не указано");
     
     // Собираем информацию о детях
@@ -108,6 +109,6 @@ $(document).ready(function() {
     document.execCommand('copy');
     
     // Показываем уведомление
-    alert('Ответ скопирован в буфер обмена! Теперь вы можете отправить его организаторам.');
+    alert('Ответ скопирован в буфер обмена! Теперь отправьте его нам. Спасибо!');
   });
 });
